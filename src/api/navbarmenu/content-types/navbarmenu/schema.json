@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbarmenus",
+  "info": {
+    "singularName": "navbarmenu",
+    "pluralName": "navbarmenus",
+    "displayName": "navbarmenu",
+    "description": ""
+  },
+  "options": {"privateAttributes": ["id", "createdAt","updatedAt","publishedAt"],
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "submenus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::submenu.submenu",
+      "mappedBy": "navbarmenu"
+    }
+  }
+}

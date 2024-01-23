@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submenus",
+  "info": {
+    "singularName": "submenu",
+    "pluralName": "submenus",
+    "displayName": "submenu",
+    "description": ""
+  },
+  "options": {
+    "privateAttributes": ["id", "createdAt","updatedAt","publishedAt"],
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "navbarmenu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::navbarmenu.navbarmenu",
+      "inversedBy": "submenus"
+    }
+  }
+}

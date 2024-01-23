@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_partner_names",
+  "info": {
+    "displayName": "Name",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

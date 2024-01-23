@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_fact_names",
+  "info": {
+    "displayName": "name",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

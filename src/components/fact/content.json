@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_fact_contents",
+  "info": {
+    "displayName": "content"
+  },
+  "options": {},
+  "attributes": {
+    "data": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}
